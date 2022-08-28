@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    path: 'on-init',
+    loadChildren: () => import('./on-init/on-init.module').then( m => m.OnInitPageModule)
   }
 ];
 

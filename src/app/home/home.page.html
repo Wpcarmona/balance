@@ -1,20 +1,61 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div class="background">
+  <div class="header">
+    <div class="spacing"></div>
+    <div class="title">
+      <label>Control de gastos</label>
+    </div>
+    <div class="spacing"></div>
+    <div class="margin">
+      <div class="margin-sides">
+        <div  class="btn-group">
+          <button style="width: 50%;" id="btn" (click)="balance()">Balance</button>
+          <button style="width: 50%;" id="btn2" (click)="planificacion()">Planificacion</button>
+        </div>
+      </div>
+    </div>
+  
   </div>
-</ion-content>
+  
+  <div class="body">
+    <div id="balance">
+      <div class="card">
+        <div class="center">
+          <label id="title">
+            panel del control
+          </label>
+        </div>
+      </div>
+      <div class="card">
+        <ul class="list-group">
+          <li>Dinero Actual
+              <span class="badge">10230182903</span>
+          </li>
+          <li>Ultimo ingreso
+              <span class="badge">10</span>
+          </li>
+          <li>total de Deudas
+              <span class="badge">9</span>
+          </li>
+          <li>total de prestamos
+              <span class="badge">0</span>
+          </li>
+          <li>tarjeta de credito
+            <span class="badge">0</span>
+        </li>
+      </ul>
+      <button class="btn" (click)="otro()">
+        <label>
+          Hola
+        </label>
+      </button>
+    </div>
+
+    <div id="planificacion">
+      <div class="card">
+        <label>nombre</label>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
